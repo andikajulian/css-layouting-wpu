@@ -1,0 +1,17 @@
+div {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.satu {
+    background-color: seagreen;
+    padding: 10px;
+    border: 13px solid indigo;
+}
+
+.dua {
+    background-color: orchid;
+    padding: 30px;
+    border: 10px dashed yellowgreen;
+}

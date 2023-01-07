@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+
+        body {
+            height: 1000px;
+        }
+
+        .kotak1, .kotak2, .kotak3 {
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            position: absolute;
+        }
+
+        .kotak1 {
+            background-color: firebrick;
+            z-index: 1;
+        }
+
+        .kotak2 {
+            background-color: slateblue;
+            top: 75px;
+            left: 75px;
+            z-index: 2;
+        }
+
+        .kotak3 {
+            background-color: chartreuse;
+            top: 150px;
+            left: 150px;
+            z-index: 3;
+        }
+
+        .container {
+            width: 450px;
+            height: 450px;
+            border: 10px solid black;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .top-bar {
+            height: 40px;
+            width: 100%;
+            position: fixed;
+            background-color: brown;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+        }
+
+        .iklan {
+            background-color: rgba(0,0,0,0.6);
+            position: fixed;
+            top: 100px;
+            bottom: 100px;
+            left: 100px;
+            right: 100px;
+            z-index: 99999;
+        }
+
+        .close {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            font-family: arial;
+            border: 3px solid black;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+<div class="top-bar"></div>
+
+    <div class="container">
+        <div class="kotak3"></div> 
+        <div class="kotak1"></div>
+        <div class="kotak2"></div>
+    </div>
+
+<div class="iklan">
+    <div class="close">X</div>
+</div>
+
+
+</body>
+</html>
